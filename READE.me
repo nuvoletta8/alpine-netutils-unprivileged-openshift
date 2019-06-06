@@ -1,0 +1,3 @@
+How to run a container with network tool inside openshift
+
+oc run my-pod --image=frehub/alpine-netutils-unprivileged --restart=Never --command -- /bin/bash -c 'while true; do sleep 1; done'
